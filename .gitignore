@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Verzeichnisse mit Daten (nur Inhalte ignorieren, nicht die Ordner selbst)
+input/*.pdf
+output/*.pdf
+output/failed/
+output/originals/
+temp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
