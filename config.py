@@ -16,6 +16,10 @@ INPUT_DIR = Path(os.getenv("INPUT_DIR", "./input"))
 OUTPUT_DIR = Path(os.getenv("OUTPUT_DIR", "./output"))
 TEMP_DIR = Path(os.getenv("TEMP_DIR", "./temp"))
 
+# SMB-Einstellungen
+SMB_SERVER = os.getenv("SMB_SERVER", "smb://192.168.1.140/scans")
+SMB_MOUNT_POINT = Path.home() / "smb_scans"  # Lokaler Mount-Punkt
+
 # OpenAI Einstellungen
 OPENAI_MODEL = "gpt-5"  # Neuestes Modell mit Vision-Unterstützung
 MAX_TOKENS = 2000  # GPT-5 braucht mehr Tokens (verwendet viele für Reasoning)
